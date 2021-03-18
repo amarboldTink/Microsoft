@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Development Index Page">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <title>Microsoft Official Homepaget</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a88a76268b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Nav -->
+        <nav class="main-nav">
+            <div class="menu-btn">
+                <i class="fas fa-bars fa-2x">
+                </i>
+            </div>
+            <a href="index.html" id="logo-link"><img src="img/logo.png" alt="Microsoft" class="logo"></a>
+            <ul class="main-menu">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#">PC Builder</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+            </ul>
+
+            <ul class="right-menu">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Breadcrumbs -->
+        <div class="breadcrumb">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="payment.html">Checkout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Checkout, Payment -->
+    <main>
+        <div class="chk-container">
+            <div class="chk-row">
+                <div class="chk-col1">
+                    <div class="col1-items">
+                        <a href="#">
+                            <img src="images/buy-1.jpg" alt="">
+                        </a>
+                        <h4>Red Printed T-Shirt</h4>
+                        <p>$60.00</p>
+                        <a href="#">Remove</a>
+                    </div>
+                    <div class="col1-items">
+                        <a href="#">
+                            <img src="images/buy-1.jpg" alt="">
+                        </a>
+                        <h4>Red Printed T-Shirt</h4>
+                        <p>$60.00</p>
+                        <a href="#">Remove</a>
+                    </div>
+                    <div class="col1-items">
+                        <a href="#">
+                            <img src="images/buy-1.jpg" alt="">
+                        </a>
+                        <h4>Red Printed T-Shirt</h4>
+                        <p>$60.00</p>
+                        <a href="#">Remove</a>
+                    </div>
+                </div>
+                <div class="chk-col2">
+                    <h2>Cart
+                        <span class="price" style="color:black">
+                            <i class="fa fa-shopping-cart"></i>
+                            <b>4</b>
+                        </span>
+                    </h3>
+                    <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+                    <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+                    <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+                    <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+                    <hr>
+                    <br>
+                    <p>Total: <span id="total-price" style="color:black"><b>$30</b></span></p>
+                    <h3>Payment</h3>
+                    <label for="fname">Accepted Cards</label>
+                    <div class="chk-icon">
+                        <button><i class="fa fa-cc-visa" style="color:navy;"></i></button>
+                        <button><i class="fa fa-cc-amex" style="color:blue;"></i></button>
+                        <button><i class="fa fa-cc-mastercard" style="color:red;"></i></button>
+                        <button><i class="fa fa-cc-discover" style="color:orange;"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-2">
+                    <img src="img/logo.png" alt="">
+                    <p>
+                        Our Purpose is to sustainably make the pleasure and benefits of sports accessible to the many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Contact</h3>
+                    <p>Address: SBD, 6th Khoroo 39-15.</p>
+                    <p>Phone: 99998888</p>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021</p>
+        </div>
+    </footer>
+
+
+    <!-- Mobile Menu Button -->
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu')
+            .classList.toggle('show'));
+    </script>
+</body>
+
+</html>

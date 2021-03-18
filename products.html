@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Development Index Page">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <title>Microsoft Official Homepaget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Nav -->
+        <nav class="main-nav">
+            <div class="menu-btn">
+                <i class="fas fa-bars fa-2x">
+                </i>
+            </div>
+            <a href="index.html" id="logo-link"><img src="img/logo.png" alt="Microsoft" class="logo"></a>
+            <ul class="main-menu">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#">PC Builder</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+            </ul>
+
+            <ul class="right-menu">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <!-- Breadcrumbs -->
+        <div class="breadcrumb">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </div>
+
+        <!-- Filter -->
+        <div id="myBtnContainer">
+            <button class="btn-filter active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn-filter" onclick="filterSelection('cpu')"> CPU</button>
+            <button class="btn-filter" onclick="filterSelection('motherboard')"> Motherboard</button>
+            <button class="btn-filter" onclick="filterSelection('gpu')"> GPU</button>
+            <button class="btn-filter" onclick="filterSelection('memory')"> Memory</button>
+        </div>
+
+        <div class="container-filter">
+            <div class="row">
+                <div class="col_4 cpu">
+                    <a href="#">
+                        <img src="images/product-5.jpg" alt="">
+                        <h4>Red Printed T-Shirt</h4>
+                    </a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$60.00</p>
+                </div>
+                <div class="col_4 cpu">
+                    <a href="#">
+                        <img src="images/product-6.jpg" alt="">
+                    </a>
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$60.00</p>
+                </div>
+                <div class="col_4">
+                    <a href="#">
+                        <img src="images/product-7.jpg" alt="">
+                    </a>
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$60.00</p>
+                </div>
+                <div class="col_4">
+                    <a href="#">
+                        <img src="images/product-8.jpg" alt="">
+                    </a>
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$60.00</p>
+                </div>
+            </div>
+
+            <div class="page-btn">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>&#8594</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-2">
+                    <img src="img/logo.png" alt="">
+                    <p>
+                        Our Purpose is to sustainably make the pleasure and benefits of sports accessible to the many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Contact</h3>
+                    <p>Address: SBD, 6th Khoroo 39-15.</p>
+                    <p>Phone: 99998888</p>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021</p>
+        </div>
+    </footer>
+
+
+
+    <!-- Mobile Menu Button -->
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu')
+            .classList.toggle('show'));
+    </script>
+
+
+
+    <!-- Filter script -->
+    <script>
+        filterSelection("all")
+
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("col_4");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn-filter");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+
+</body>
+
+</html>
