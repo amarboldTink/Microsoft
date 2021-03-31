@@ -192,7 +192,7 @@ ul {
 }
 
 .col img {
-    width: 100%;
+    width: 65%;
     cursor: pointer;
     filter: grayscale(100%);
 }
