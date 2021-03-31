@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     background: white;
     color: black;
     font-size: 15px;
@@ -38,7 +39,7 @@ ul {
 }
 
 .main-nav .logo {
-    width: 110px;
+    width: 30px;
 }
 
 .main-nav ul {
@@ -121,7 +122,7 @@ ul {
     margin-top: 20px;
 }
 
-/* Words in the Middle */
+/* Words in the Middle
 .middleWord {
     width: 100%;
     height: 60px;
@@ -133,7 +134,7 @@ ul {
     padding-bottom: 20px;
     margin-bottom: 10px;
 
-}
+} */
 
 /* Cards */
 .cards {
@@ -266,7 +267,7 @@ footer h3 {
 }
 
 .footer-col-2 img {
-    width: 180px;
+    width: 50px;
     margin-bottom: 20px;
 }
 
@@ -356,6 +357,8 @@ footer hr {
 }
 
 .btn-filter {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
     width: 100px;
     height: 50px;
     border: none;
@@ -668,7 +671,7 @@ form a {
     background: black;
     height: 3px;
     margin-top: 8px;
-    transform: translateX(100px);
+    transform: translateX(110px);
     transition: transform 1s;
 }
 
